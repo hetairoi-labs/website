@@ -5,7 +5,7 @@ import { SimpleLink } from "@/components/ui/simple-link";
 
 export function About() {
 	return (
-		<Section className="bg-dark py-24 text-dark-foreground md:py-32">
+		<Section className="min-h-screen bg-dark py-24 text-dark-foreground md:py-32">
 			<div className="mx-auto flex max-w-7xl flex-col gap-24 md:gap-32">
 				<div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[1fr_auto]">
 					<StaggerText delay={0.2}>

@@ -4,7 +4,7 @@ import { CTAButton } from "@/components/ui/cta-button";
 
 export function Hero() {
 	return (
-		<Section className="flex min-h-screen items-center pt-32 pb-16">
+		<Section className="flex min-h-[83dvh] items-center pt-32 pb-16">
 			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-8 lg:grid-cols-[200px_1fr] lg:gap-16">
 				<StaggerText className="hidden pt-4 lg:block" delay={0.2}>
 					<StaggerItem>
@@ -14,7 +14,7 @@ export function Hero() {
 					</StaggerItem>
 				</StaggerText>
 
-				<StaggerText className="flex flex-col gap-4 lg:gap-6" delay={0.2}>
+				<StaggerText className="flex flex-col gap-4 pt-24 lg:gap-6" delay={0.2}>
 					<StaggerItem>
 						<h1 className="font-normal text-5xl text-foreground leading-[1.1] tracking-[-0.04em] md:text-7xl md:leading-none lg:text-[96px]">
 							Hetairoi® Consulting LLC.

@@ -1,4 +1,5 @@
 import nextDynamic from "next/dynamic";
+import { ScrollSmootherLayout } from "@/components/animations/scroll-smoother";
 import { About } from "@/components/landing/about";
 import { Hero } from "@/components/landing/hero";
 import { Navigation } from "@/components/layout/navigation";
@@ -54,16 +55,17 @@ export const dynamic = "force-static";
 export default function Home() {
 	return (
 		<div className="min-h-screen bg-background font-sans text-foreground antialiased">
-			<Navigation />
-
-			<main>
-				<Hero />
-				<About />
-				<HowWeDeliver />
-				<Works />
-				<FAQ />
-				<Footer />
-			</main>
+			<ScrollSmootherLayout>
+				<Navigation />
+				<main>
+					<Hero />
+					<About />
+					<HowWeDeliver />
+					<Works />
+					<FAQ />
+					<Footer />
+				</main>
+			</ScrollSmootherLayout>
 		</div>
 	);
 }
