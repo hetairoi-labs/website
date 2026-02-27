@@ -112,8 +112,8 @@ export default function RootLayout({
 				<Providers>
 					<div className="min-h-svh">{children}</div>
 				</Providers>
-				<Analytics />
 				<SpeedInsights />
+				<Analytics />
 			</body>
 		</html>
 	);
