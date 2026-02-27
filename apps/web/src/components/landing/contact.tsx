@@ -23,7 +23,7 @@ export function Contact() {
 								</div>
 								<div className="flex flex-col gap-2 py-1 md:pr-4">
 									<h3 className="max-w-lg font-normal text-foreground text-lg leading-tight md:text-xl">
-										Hey, I&apos;m Kartik
+										Need more information?
 									</h3>
 									<p className="max-w-xl text-base text-foreground/60 leading-relaxed">
 										If you&apos;ve got any questions or just want to talk things
@@ -33,7 +33,7 @@ export function Contact() {
 										className="w-fit border-foreground/70 border-b pb-1 text-base text-foreground transition-colors hover:border-foreground hover:text-foreground"
 										href="mailto:hello@hetairoi.xyz"
 									>
-										Talk directly to me
+										Talk directly to us
 									</a>
 								</div>
 							</div>
