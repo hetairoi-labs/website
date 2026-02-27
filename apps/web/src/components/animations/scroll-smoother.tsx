@@ -5,7 +5,11 @@ import gsap from "gsap";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useRef } from "react";
-import { detectSafari, prefersReducedMotion } from "@/lib/browser";
+import {
+	detectMobile,
+	detectSafari,
+	prefersReducedMotion,
+} from "@/lib/browser";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -22,7 +26,8 @@ export function ScrollSmootherLayout({ children }: ScrollSmootherLayoutProps) {
 			if (
 				!(wrapperRef.current && contentRef.current) ||
 				prefersReducedMotion() ||
-				detectSafari()
+				detectSafari() ||
+				detectMobile()
 			) {
 				return;
 			}

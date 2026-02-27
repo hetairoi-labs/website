@@ -15,3 +15,10 @@ export function prefersReducedMotion(): boolean {
 	}
 	return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
+
+export function detectMobile(): boolean {
+	if (typeof window === "undefined") {
+		return false;
+	}
+	return window.matchMedia("(pointer: coarse)").matches;
+}
