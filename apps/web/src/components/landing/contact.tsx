@@ -18,7 +18,7 @@ export function Contact() {
 										className="object-cover object-top"
 										fill
 										priority
-										src="/images/contact/kartik.jpeg"
+										src="/images/contact/logo.webp"
 									/>
 								</div>
 								<div className="flex flex-col gap-2 py-1 md:pr-4">
