@@ -9,10 +9,9 @@ export function Hero() {
 			<video
 				autoPlay
 				className="absolute inset-0 z-0 h-full w-full object-cover opacity-70"
-				loop
 				muted
 				playsInline
-				src="/videos/hero.webm"
+				src="/videos/hero_3.webm"
 			/>
 
 			<div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-8 lg:grid-cols-[100px_1fr] lg:gap-16">
@@ -26,7 +25,7 @@ export function Hero() {
 					</p>
 				</div>
 
-				<div className="flex flex-col gap-4 px-8 pt-24 lg:gap-6">
+				<div className="flex flex-col gap-4 px-8 lg:gap-6">
 					<h1
 						className="translate-y-10 font-normal text-5xl text-foreground leading-[1.1] tracking-[-0.04em] opacity-0 md:text-7xl md:leading-none lg:text-[96px]"
 						data-intro-item
@@ -40,11 +39,8 @@ export function Hero() {
 						data-intro-item
 						data-intro-order="5"
 					>
-						US-registered consulting firm{" "}
-						<span className="mx-2 text-muted-foreground">|</span>
-						High Quality Software Solutions{" "}
-						<span className="mx-2 text-muted-foreground">|</span>
-						Globally distributed delivery
+						US-registered firm delivering high-quality software development
+						services, from blockchain technologies to full-stack applications.
 					</p>
 
 					<div

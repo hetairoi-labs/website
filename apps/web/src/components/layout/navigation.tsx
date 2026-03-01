@@ -27,7 +27,7 @@ export function Navigation() {
 					</div>
 
 					<div
-						className="glass hidden translate-y-10 items-center gap-8 rounded-2xl bg-secondary p-6 pr-6 opacity-0 lg:flex"
+						className="hidden translate-y-10 items-center gap-8 rounded-2xl bg-secondary p-6 pr-6 opacity-0 lg:flex"
 						data-intro-item
 						data-intro-order="2"
 					>

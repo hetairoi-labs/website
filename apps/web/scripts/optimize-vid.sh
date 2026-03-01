@@ -1,17 +1,40 @@
 #!/bin/bash
-# Batch convert all MP4s in public/* into optimized WebM
+# Adaptive batch convert MP4s -> WebM with CRF scaling
 # Usage: ./optimize-all.sh
 
 INPUT_DIR="public/videos"
-CRF=32
 SCALE="1280:-1"
 
 for file in "$INPUT_DIR"/*.mp4; do
-  [ -e "$file" ] || continue  # skip if no mp4 files
+  [ -e "$file" ] || continue
   base=$(basename "$file" .mp4)
   output="$INPUT_DIR/$base.webm"
 
-  echo "Optimizing $file -> $output"
+  echo "Analyzing $file..."
+
+  # Extract metadata
+  duration=$(ffprobe -v error -show_entries format=duration \
+    -of default=noprint_wrappers=1:nokey=1 "$file")
+  width=$(ffprobe -v error -select_streams v:0 \
+    -show_entries stream=width \
+    -of default=noprint_wrappers=1:nokey=1 "$file")
+
+  # Decide CRF based on heuristics
+  if (( $(echo "$duration < 60" | bc -l) )); then
+    # Short clips → higher quality
+    CRF=24
+  elif (( $(echo "$duration < 300" | bc -l) )); then
+    CRF=28
+  else
+    CRF=32
+  fi
+
+  # Adjust for resolution
+  if [ "$width" -ge 1920 ]; then
+    CRF=$((CRF - 2))  # give extra quality for HD+
+  fi
+
+  echo "Optimizing $file -> $output (CRF=$CRF)"
 
   # First pass
   ffmpeg -i "$file" \
@@ -36,6 +59,5 @@ for file in "$INPUT_DIR"/*.mp4; do
     -an \
     "$output"
 
-  # Cleanup ffmpeg log files
   rm -f ffmpeg2pass-0.log ffmpeg2pass-0.log.mbtree
 done
