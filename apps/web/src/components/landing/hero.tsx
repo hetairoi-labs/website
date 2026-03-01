@@ -9,6 +9,7 @@ export function Hero() {
 			<video
 				autoPlay
 				className="absolute inset-0 z-0 h-full w-full object-cover opacity-70"
+				loop
 				muted
 				playsInline
 				src="/videos/hero_3.webm"
