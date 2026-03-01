@@ -74,7 +74,7 @@ export function About() {
 				</div>
 			</div>
 
-			<div className="-mx-4 mt-40 grid min-h-[72vh] w-auto grid-cols-1 md:-mx-8 lg:-mx-16 lg:grid-cols-2">
+			<div className="-mx-8 mt-40 grid min-h-[72vh] w-auto grid-cols-1 lg:-mx-16 lg:grid-cols-2">
 				<div className="flex min-h-[50dvh] flex-col p-8 md:p-12 lg:pl-16">
 					<StaggerText className="h-full" delay={0.15} triggerOnView>
 						<StaggerItem>

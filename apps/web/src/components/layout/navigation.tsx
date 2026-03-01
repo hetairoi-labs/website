@@ -9,19 +9,8 @@ import { cn } from "@/lib/utils";
 export function Navigation() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-	const mobileLinks = [
-		{ name: "Services", href: "/#services" },
-		{ name: "Case Studies", href: "/#case-studies" },
-		{ name: "How We Work", href: "/#how-we-work" },
-		{ name: "Contact", href: "/#contact" },
-	];
-
 	return (
-		<nav
-			className={cn(
-				"absolute top-0 left-0 z-50 w-full px-4 py-8 md:px-8 lg:px-16"
-			)}
-		>
+		<nav className={cn("absolute top-0 left-0 z-50 w-full px-8 py-8 lg:px-16")}>
 			<div className="mx-auto max-w-7xl">
 				<div className="flex w-full flex-row items-start justify-between">
 					<div
@@ -86,22 +75,6 @@ export function Navigation() {
 					</div>
 				</div>
 			</div>
-
-			{isMobileMenuOpen && (
-				<div className="absolute top-full left-0 flex w-full flex-col gap-4 border-border border-b bg-background p-4 shadow-lg lg:hidden">
-					{mobileLinks.map((link) => (
-						<SimpleLink
-							className="py-2 font-medium text-foreground no-underline hover:no-underline"
-							href={link.href}
-							key={link.name}
-							onClick={() => setIsMobileMenuOpen(false)}
-						>
-							{link.name}
-						</SimpleLink>
-					))}
-					<CTAButton href="/#contact">Schedule a Call</CTAButton>
-				</div>
-			)}
 		</nav>
 	);
 }

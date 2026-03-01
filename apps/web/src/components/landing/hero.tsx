@@ -25,7 +25,7 @@ export function Hero() {
 					</p>
 				</div>
 
-				<div className="flex flex-col gap-4 pt-24 lg:gap-6">
+				<div className="flex flex-col gap-4 px-8 pt-24 lg:gap-6">
 					<h1
 						className="translate-y-10 font-normal text-5xl text-foreground leading-[1.1] tracking-[-0.04em] opacity-0 md:text-7xl md:leading-none lg:text-[96px]"
 						data-intro-item
