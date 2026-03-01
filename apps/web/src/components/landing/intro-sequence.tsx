@@ -39,7 +39,7 @@ export function IntroSequence() {
 			duration: 0.6,
 			ease: "power2.out",
 			stagger: 0.1,
-			delay: 0.2,
+			delay: 1.2,
 		});
 
 		return () => {

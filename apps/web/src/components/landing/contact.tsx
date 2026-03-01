@@ -20,7 +20,7 @@ export function Contact() {
 										className="object-cover object-top"
 										fill
 										priority
-										src="/images/contact/logo.webp"
+										src="/images/logo.webp"
 									/>
 								</div>
 								<div className="flex flex-col gap-2 py-1 md:pr-4">
