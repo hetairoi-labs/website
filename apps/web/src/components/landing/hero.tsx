@@ -36,12 +36,12 @@ export function Hero() {
 					</h1>
 
 					<p
-						className="max-w-2xl translate-y-10 font-normal text-2xl text-foreground opacity-0 md:text-3xl md:leading-relaxed"
+						className="max-w-3xl translate-y-10 font-normal text-2xl text-foreground opacity-0 md:text-3xl md:leading-relaxed"
 						data-intro-item
 						data-intro-order="5"
 					>
-						US-registered firm delivering high-quality software development
-						services, from blockchain technologies to full-stack applications.
+						US-based software firm delivering AI-first platforms, blockchain
+						solutions, and end-to-end applications.
 					</p>
 
 					<div
