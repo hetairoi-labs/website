@@ -12,9 +12,8 @@ export function Hero() {
 				loop
 				muted
 				playsInline
-			>
-				<source src="/videos/hero.mp4" type="video/mp4" />
-			</video>
+				src="/videos/hero.webm"
+			/>
 			<div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-8 lg:grid-cols-[100px_1fr] lg:gap-16">
 				<div
 					className="hidden translate-y-10 pt-4 opacity-0 lg:block"

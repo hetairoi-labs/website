@@ -45,7 +45,7 @@ export function About() {
 									loop
 									muted
 									playsInline
-									src="/videos/about.mp4"
+									src="/videos/about.webm"
 								/>
 							</div>
 						</StaggerItem>
@@ -126,7 +126,7 @@ export function About() {
 								loop
 								muted
 								playsInline
-								src="/videos/our-vision.mp4"
+								src="/videos/our-vision.webm"
 							/>
 						</div>
 					</StaggerItem>
