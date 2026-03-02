@@ -10,6 +10,7 @@ interface CTAButtonProps {
 	children: React.ReactNode;
 	className?: string;
 	href: string;
+	target?: "_blank" | "_self";
 	variant?: "primary" | "outline";
 }
 
@@ -18,6 +19,7 @@ export function CTAButton({
 	children,
 	className,
 	variant = "primary",
+	target = "_blank",
 }: CTAButtonProps) {
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -44,6 +46,7 @@ export function CTAButton({
 			href={href as Route}
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
+			target={target}
 		>
 			<span className="font-medium text-sm">{children}</span>
 			<div

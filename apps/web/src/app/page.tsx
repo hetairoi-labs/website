@@ -1,6 +1,6 @@
 import { ScrollSmootherLayout } from "@/components/animations/scroll-smoother";
 import { About } from "@/components/landing/about";
-import { Contact } from "@/components/landing/contact";
+import { CtaSection } from "@/components/landing/cta-section";
 import { FAQ } from "@/components/landing/faq";
 import { HowWeDeliver } from "@/components/landing/how-we-deliver";
 import { IntroSequence } from "@/components/landing/intro-sequence";
@@ -19,7 +19,8 @@ export default function Home() {
 					<Works />
 					<HowWeDeliver />
 					<FAQ />
-					<Contact />
+					<CtaSection />
+					{/* <Contact /> */}
 					<Footer />
 				</main>
 			</ScrollSmootherLayout>
