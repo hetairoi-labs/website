@@ -95,9 +95,7 @@ export function About() {
 						<StaggerItem>
 							<div className="mt-8 flex items-center gap-4">
 								<div className="flex flex-col">
-									<span className="text-base text-foreground">
-										Spandan Barve
-									</span>
+									<span className="text-base text-foreground">Spandan</span>
 									<span className="text-foreground/60 text-sm">
 										Founder, Hetairoi
 									</span>

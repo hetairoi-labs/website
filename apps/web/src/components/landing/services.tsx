@@ -21,28 +21,28 @@ const services: ServiceItem[] = [
 		title: "AI",
 		description:
 			"From AI workflow design to production integrations, we build practical AI systems that automate internal operations and improve user experiences.",
-		image: "/images/services/service-ai.png",
+		image: "/images/services/ai.webp",
 	},
 	{
 		id: "blockchain",
 		title: "Blockchain",
 		description:
 			"Secure smart contract systems, protocol integrations, and infrastructure for Web3 products that need reliability, traceability, and scale.",
-		image: "/images/services/service-blockchain.png",
+		image: "/images/services/web3.webp",
 	},
 	{
 		id: "full-stack",
 		title: "Full Stack Applications",
 		description:
 			"End-to-end product development across frontend, backend, APIs, and data layers with strong performance and maintainable architecture.",
-		image: "/images/services/service-full-stack.png",
+		image: "/images/services/web2.webp",
 	},
 	{
 		id: "custom-software",
 		title: "Custom Software",
 		description:
 			"Tailored platforms built around your business process, delivery workflow, and growth goals, not generic one-size-fits-all templates.",
-		image: "/images/services/service-custom-software.png",
+		image: "/images/services/custom.webp",
 	},
 ];
 
@@ -95,7 +95,7 @@ export function Services() {
 								const isActive = service.id === activeId;
 								return (
 									<button
-										className="group relative border-border border-b py-3 text-left lg:py-4"
+										className="group relative cursor-pointer border-border border-b py-3 text-left lg:py-4"
 										key={service.id}
 										onClick={() => setActiveId(service.id)}
 										type="button"

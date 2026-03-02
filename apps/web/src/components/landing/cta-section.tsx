@@ -43,7 +43,7 @@ export function CtaSection() {
 						</p>
 					</StaggerItem>
 					<CTAButton href="https://calendly.com/kartik-hetairoi/30min">
-						Book a Free Call
+						Book a free discovery call
 					</CTAButton>
 				</StaggerText>
 			</div>
