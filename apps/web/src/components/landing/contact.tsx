@@ -8,8 +8,8 @@ import { Input } from "@/components/ui/input";
 
 export function Contact() {
 	return (
-		<Section className="-mt-16" id="contact">
-			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-5 lg:grid-cols-2">
+		<Section className="relative -mt-16 overflow-hidden" id="contact">
+			<div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 gap-5 lg:grid-cols-2">
 				<div className="flex flex-col gap-6">
 					<StaggerText delay={0.1} triggerOnView>
 						<StaggerItem>

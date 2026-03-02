@@ -12,3 +12,4 @@ alwaysApply: false
 - [2025-02-25] Mistake: Used explicit color values (`text-white`, `bg-neutral-500`, `ring-[oklch(...)]`) instead of design tokens. Fix: Use semantic token classes (`text-foreground`, `bg-secondary`, `ring-card`).
 - [2025-02-25] Mistake: Created a separate `--brand` CSS variable when `--primary` could serve the same purpose. Fix: Reuse existing token (`--primary`) for the accent color instead of introducing new custom vars.
 - [2025-02-25] Mistake: Used hex values in `globals.css`. Fix: Convert all color values to `oklch()` format for consistency and perceptual uniformity.
+- [2025-03-02] Mistake: Placed animation hook in `src/hooks/` instead of project structure. Fix: Animation-related code (hooks, components) goes in `apps/web/src/components/animations/`. Check repo structure before adding new folders.

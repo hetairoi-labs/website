@@ -4,6 +4,7 @@ import { Contact } from "@/components/landing/contact";
 import { FAQ } from "@/components/landing/faq";
 import { HowWeDeliver } from "@/components/landing/how-we-deliver";
 import { IntroSequence } from "@/components/landing/intro-sequence";
+import { Services } from "@/components/landing/services";
 import { Works } from "@/components/landing/works";
 import { Footer } from "@/components/layout/footer";
 
@@ -14,6 +15,7 @@ export default function Home() {
 				<main>
 					<IntroSequence />
 					<About />
+					<Services />
 					<Works />
 					<HowWeDeliver />
 					<FAQ />
