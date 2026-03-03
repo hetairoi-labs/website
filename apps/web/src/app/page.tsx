@@ -4,6 +4,7 @@ import { CtaSection } from "@/components/landing/cta-section";
 import { FAQ } from "@/components/landing/faq";
 import { HowWeDeliver } from "@/components/landing/how-we-deliver";
 import { IntroSequence } from "@/components/landing/intro-sequence";
+import { Pricing } from "@/components/landing/pricing";
 import { Services } from "@/components/landing/services";
 import { Works } from "@/components/landing/works";
 import { Footer } from "@/components/layout/footer";
@@ -19,6 +20,7 @@ export default function Home() {
 					<Works />
 					<HowWeDeliver />
 					<FAQ />
+					<Pricing />
 					<CtaSection />
 					{/* <Contact /> */}
 					<Footer />
