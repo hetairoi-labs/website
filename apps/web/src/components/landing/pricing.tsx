@@ -2,7 +2,6 @@ import type { Route } from "next";
 import Link from "next/link";
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { Section } from "@/components/layout/section";
-import { Arrow } from "@/components/ui/arrow";
 import { CAL_LINK } from "@/constants";
 import { cn } from "@/lib/utils";
 
@@ -129,12 +128,6 @@ export function Pricing() {
 										target="_blank"
 									>
 										{plan.id === "custom" ? "Book a Free Call" : "Get Started"}
-										<Arrow
-											accentColor="currentColor"
-											className="text-background"
-											disableAnimation
-											size={28}
-										/>
 									</Link>
 
 									<ul className="flex flex-col gap-4 p-6 pt-7 md:p-8">
