@@ -19,7 +19,7 @@ const pricingPlans: PricingPlan[] = [
 	{
 		id: "starter",
 		name: "Flexible",
-		priceLabel: "$1500",
+		priceLabel: "$800",
 		periodLabel: "/month",
 		description:
 			"Ongoing monthly support for early teams that need steady momentum.",
@@ -34,7 +34,7 @@ const pricingPlans: PricingPlan[] = [
 	{
 		id: "build",
 		name: "Comprehensive",
-		priceLabel: "$5,000",
+		priceLabel: "$6,000",
 		periodLabel: "/project",
 		description:
 			"Project-based product delivery with milestone-driven execution.",
@@ -44,7 +44,7 @@ const pricingPlans: PricingPlan[] = [
 			"Full-stack build across prioritized features",
 			"Milestones with predictable handoffs",
 			"Structured reviews and delivery checkpoints",
-			"Best for MVP and product expansion phases",
+			"Priority speed, support and maintenance",
 		],
 	},
 	{
